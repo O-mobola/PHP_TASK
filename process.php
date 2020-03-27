@@ -1,6 +1,6 @@
 <?php
 
-if (isset($_POST['name'])) {
+if (isset($_POST['submit'])) {
   
   // set variables for the field specified.
   
@@ -13,11 +13,12 @@ if (isset($_POST['name'])) {
   //create a new file for user
   
   $handle = fopen("$username.txt", "w");
-  $data .= file_put_contents($name .$username .$email .$message .$policy);
+  $data = "name: ".$name. " username: ".$username. " email: ".$email. " message: ".$message." policy: ".$policy; 
+echo '<br>';
   //store user input into the file
-  fwrite($handle,$data);
+  fwrite($handle, $data);
   fclose($handle);
- 
+
 }
 
 echo 'your message sent';

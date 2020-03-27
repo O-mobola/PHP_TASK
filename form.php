@@ -1,11 +1,4 @@
 
-
-
-
-
-
-
-
 <! DOCTYPE HTML>
 <html lang="en">
   <head>
@@ -69,3 +62,4 @@
     </footer>
   </body>
 </html>
+
